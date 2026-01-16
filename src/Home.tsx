@@ -6,7 +6,7 @@ import {
     useScroll,
     useTransform,
 } from "framer-motion";
-import { Navbar } from "@/components/Navbar";
+import { MiniNavbar } from "@/components/ui/mini-navbar";
 import { HeroSection } from "@/components/HeroSection";
 import { AboutSection } from "@/components/AboutSection";
 import { VelocitySection } from "@/components/VelocitySection";
@@ -48,7 +48,16 @@ export const Home: React.FC = () => {
             style={{ backgroundColor: background }}
             className="w-full text-white selection:bg-white/20 overflow-clip"
         >
-            <Navbar />
+            <MiniNavbar 
+                navLinks={[
+                    { label: 'About', href: '#about' },
+                    { label: 'Projects', href: '#projects' },
+                    { label: 'Skills', href: '#skills' },
+                    { label: 'Journal', href: '#blog' },
+                    { label: 'Contact', href: '#contact' },
+                ]}
+                logoText="ANTIGRAVITY"
+            />
             <HeroSection
                 containerRef={containerRef}
                 mouseX={mouseX}
