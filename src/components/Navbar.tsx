@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import {
     LayoutGrid,
     Search,
@@ -10,9 +10,6 @@ import {
     Users,
     User,
     Settings,
-    LogIn,
-    Menu,
-    X
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 import {

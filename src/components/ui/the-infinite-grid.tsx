@@ -6,7 +6,6 @@ import {
   useMotionTemplate,
   useScroll,
   useTransform,
-  type MotionValue,
 } from "framer-motion";
 import { FlipWords } from "@/components/ui/flip-words";
 import { TextRevealByWord } from "@/components/ui/text-reveal";
