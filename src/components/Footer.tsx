@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 export const Footer: React.FC = () => {
     return (
@@ -31,7 +31,7 @@ export const Footer: React.FC = () => {
                             <li><a href="#hero" className="text-white hover:text-neutral-400 transition-colors">Home</a></li>
                             <li><a href="#about" className="text-white hover:text-neutral-400 transition-colors">About</a></li>
                             <li><a href="#projects" className="text-white hover:text-neutral-400 transition-colors">Projects</a></li>
-                            <li><a href="#blog" className="text-white hover:text-neutral-400 transition-colors">Journal</a></li>
+                            <li><Link to="/blog" className="text-white hover:text-neutral-400 transition-colors">Journal</Link></li>
                         </ul>
                     </div>
 
@@ -52,7 +52,7 @@ export const Footer: React.FC = () => {
                     </p>
                     <div className="flex gap-8 text-neutral-600 text-xs font-mono">
                         <a href="#" className="hover:text-white transition-colors">PRIVACY POLICY</a>
-                        <a href="#" className="hover:text-white transition-colors">TERMS OF SERVICE</a>
+                        <Link to="/terms" className="hover:text-white transition-colors">TERMS OF SERVICE</Link>
                     </div>
                 </div>
             </div>

@@ -18,11 +18,14 @@ interface HeroSectionProps {
 
 export const HeroSection: React.FC<HeroSectionProps> = ({
   containerRef,
-  mouseX,
-  mouseY,
+  mouseX: _mouseX,
+  mouseY: _mouseY,
   handleMouseMove,
   maskImage,
 }) => {
+  // Props mouseX and mouseY are passed but used in parent for mask calculation
+  void _mouseX;
+  void _mouseY;
   return (
     <div
       id="hero"
